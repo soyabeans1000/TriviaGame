@@ -6,8 +6,6 @@ let qCount = 0
 let selectedAnswer
 let gameMessage
 
-
-
 questions = [{
   question: "The energy used by most living beings on the earth to feed, move, and reproduce all comes from what original source?",
   choiceList: ["the soil","the sun", "the water", "Twinkies"],
@@ -68,7 +66,6 @@ function checkAnswer(index)
 {
   clearInterval(timer)
   let answerArray = selectedAnswer.split(' ')
-  //console.log(answerArray)
   
   let answerCode
   let QuestionCode = answerArray[0].substring(1)
@@ -103,13 +100,13 @@ console.log("Cryptic Real Answer=>" + realAnswer)
 let correct = false;
 if (selectedAnswer === realAnswer)
 {
-  gameMessage = "YOU ARE CORRECT"
+  gameMessage = "YOU ARE CORRECT!!!"
     totalCorrect++
 }
 else
 {
 
-  gameMessage = "WRONG"  
+  gameMessage = "YOU ARE WRONG!!!"  
   totalWrong++
  
 }
@@ -131,9 +128,7 @@ setTimeout(function(){
   qCount++
   if (qCount === questions.length)
   {
-      console.log("Before Displaying Score")
-    displayScore()
-    
+    displayScore() 
   }
   else  displayQuestion(qCount)
 },2000)  
@@ -198,38 +193,23 @@ document.addEventListener('click', e => {
 
 function displayScore()
 {
-  // document.querySelector('#game-content').textContent = `Total Correct:${totalCorrect}
-  // Total wrong: ${totalWrong}`
-
+  
   document.querySelector('#game-content').textContent = "Game Score Computed here"
 
-//  document.querySelector('#game-content').innerHTML = `<div class="score_board"><div class="score_title">Your Score</div> <br> Total Correct:${totalCorrect}<br>
-//  Total wrong: ${totalWrong}</div><br>` 
-//  
-//  let newgameBtn = document.createElement('button')
-//  newgameBtn.innerHTML = 'New Game'
-//  document.querySelector('#game-content').append(newgameBtn)
-//  newgameBtn.addEventListener('click',init)
+document.querySelector('#game-content').innerHTML = `<div class="score_board"><div class="score_title">Your Score</div> <br> Total Correct:${totalCorrect}<br>
+Total wrong: ${totalWrong}</div><br>` 
+
+ let newgameBtn = document.createElement('button')
+  newgameBtn.innerHTML = 'New Game'
+   document.querySelector('#game-content').append(newgameBtn)
+   newgameBtn.addEventListener('click',init)
  }
 
 
 
-function init(){
- timeUp = false
- 
+function init(){ 
  displayQuestion(0)
-
 }
 
 
 init()
-
-
-
-//Put logic for new Game and Prevent Game from running.... 
-
-//To do:
-//Button Behaviour
-//Correct and Wrong Computation
-//Display Score
-//Add Sounds if possible
