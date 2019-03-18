@@ -1,0 +1,78 @@
+
+body
+ {
+  opacity: 0.94;
+  min-height:100vh;
+  background-image: url('../images/jelly-fish-bg.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: khaki;
+  position: relative;
+        
+ }
+  
+    .main-game
+  {
+    background-color:white;
+  }
+
+  .Q
+  {
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size:1.2em;
+    padding:10px;
+  }
+
+ 
+
+  .final_score
+  {
+    font-size:1.2em;
+  }
+
+  .choiceBtn
+  {
+      margin: 10px;
+      min-width:40%;
+  }
+
+  .submit
+  {
+    margin-top:10px;
+    text-align:center;
+
+  }
+
+  #display {
+    font-family: monospace;
+    font-size: 50px;
+    color: green;
+    /* Typography */
+    text-align: center;
+  }
+  
+  .container
+  {
+    min-height:50vh;
+    min-width:40vw;
+    margin: 0 auto;
+    margin-top:10vh;
+    border: solid darkkhaki 10px;
+    opacity: 0.85;
+  }
+
+  #game-content
+  {
+  
+  }
+
+  @media only screen and (max-width: 640px) {
+
+    .choiceBtn
+  {
+      margin: 5px;
+      min-width:50%;
+  }
+  }
