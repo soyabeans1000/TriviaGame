@@ -28,7 +28,7 @@ function init(){
  </div>`   
      
      let questionDiv = document.createElement('div')
-  questionDiv.innerHTML = questions[index].question
+  questionDiv.innerHTML = `Q${qCount+1}: ${questions[index].question}`
  questionDiv.className = 'Q'
  document.querySelector('#content').append(questionDiv)
  
@@ -46,7 +46,7 @@ function init(){
    
    let submitBtn = document.createElement('button')
    submitBtn.className = 'red center btn submit'
-  submitBtn.innerHTML = 'Submit Answers'
+  submitBtn.innerHTML = 'Submit Answer'
   submitBtn.id = "SubmitButton"
    document.querySelector('#game-content').append(submitBtn)
  
@@ -139,7 +139,7 @@ function displayScore()
   
   document.querySelector('#game-content').textContent = "Game Score Computed here"
 
-document.querySelector('#game-content').innerHTML = `<div class="score_board"><h2>YOUR SCORE</h2><br>
+document.querySelector('#game-content').innerHTML = `<div class="score_board"><h2>YOUR SCORE</h2>
 Total Questions:${questions.length}<br><br>
 Total Correct:${totalCorrect}<br><br>
 Total wrong: ${totalWrong}</div><br><br>` 
