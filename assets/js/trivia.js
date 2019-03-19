@@ -16,8 +16,10 @@ function init(){
  {
  
    compTime();
+
+   console.log("inside display Q" + qCount)
  
-     document.querySelector('#game-content').innerHTML = `<h1>Trivia Game</h1>          
+     document.querySelector('#game-content').innerHTML = `<h1>Biology Trivia Game</h1>          
  <div class = "remaining_time">Time Remaining
  </div>
  <div id="display">00:00
@@ -55,6 +57,7 @@ function init(){
 function checkAnswer(index)
 {
   clearInterval(timer)
+
   let answerArray = selectedAnswer.split(' ')
   
   let answerCode
@@ -113,14 +116,20 @@ function displayAnswer(message){
 
 
 setTimeout(function(){
+  
+  console.log("inside display Answer " + qCount + " " + questions.length)
 
   qCount++
+  
   if (qCount === questions.length)
   {
     displayScore() 
   }
-  else  displayQuestion(qCount)
+  else { 
+    displayQuestion(qCount) } 
 },2000)  
+
+
 
 }
 
@@ -136,7 +145,7 @@ Total Correct:${totalCorrect}<br><br>
 Total wrong: ${totalWrong}</div><br><br>` 
 
  let newgameBtn = document.createElement('button')
-  newgameBtn.innerHTML = 'New Game'
+  newgameBtn.innerHTML = 'New Trivia Quiz'
    document.querySelector('#game-content').append(newgameBtn)
    newgameBtn.addEventListener('click',init)
  }
