@@ -1,3 +1,4 @@
+//Array with Question Objects
 questions = [{
   question: "The energy used by most living beings on the earth to feed, move, and reproduce all comes from what original source?",
   choiceList: ["the soil", "the sun", "the water", "Twinkies"],
