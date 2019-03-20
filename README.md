@@ -1,7 +1,7 @@
 ### trivia-game
-#Trivia Game - Javascript
+Trivia Game - Javascript
 
-###Technologies Used:
+Technologies Used:
 # Javascipt
 # Materialize CSS
 # DOM Manipulation
