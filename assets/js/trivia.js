@@ -1,9 +1,8 @@
 //set global variables
-let totalQuestions = 3
 let totalCorrect = 0
 let totalWrong = 0
 let qCount = 0
-let selectedAnswer
+let selectedAnswer = ""
 let gameMessage
 
 
@@ -58,6 +57,10 @@ function checkAnswer(index)
 {
   clearInterval(timer)
 
+ if (selectedAnswer === "")
+ displayAnswer("NO SELECTION!!!")
+
+
   let answerArray = selectedAnswer.split(' ')
   
   let answerCode
@@ -89,7 +92,8 @@ function checkAnswer(index)
 
 let realAnswer = "Q" + QuestionCode  + " " + answerCode
 
-console.log("Cryptic Real Answer=>" + realAnswer)
+
+console.log("Cryptic Real Answer=>" + realAnswer + "QCount=>" + qCount)
 let correct = false;
 if (selectedAnswer === realAnswer)
 {
@@ -136,8 +140,6 @@ setTimeout(function(){
 
 function displayScore()
 {
-  
-  document.querySelector('#game-content').textContent = "Game Score Computed here"
 
 document.querySelector('#game-content').innerHTML = `<div class="score_board"><h2>YOUR SCORE</h2>
 Total Questions:${questions.length}<br><br>
@@ -157,7 +159,9 @@ Total wrong: ${totalWrong}</div><br><br>`
 document.addEventListener('click', e => {
   // make sure thing clicked is random number button and that the game has not ended yet
   if (e.target.className === 'waves-effect waves-light btn choiceBtn') {
-  selectedAnswer =  e.target.getAttribute('value')  }
+  selectedAnswer =  e.target.getAttribute('value') 
+
+}
 
 
     if (e.target.id === "SubmitButton"){
