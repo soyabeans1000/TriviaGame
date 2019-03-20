@@ -161,6 +161,21 @@ document.addEventListener('click', e => {
   if (e.target.className === 'waves-effect waves-light btn choiceBtn') {
   selectedAnswer =  e.target.getAttribute('value') 
 
+
+
+  let btnArray = document.querySelectorAll('.choiceBtn')
+
+  btnArray.forEach(element => {
+
+    if (element.getAttribute('value') === selectedAnswer)
+    element.className = "waves-effect waves-light btn choiceBtn blue"
+    else 
+    element.className = "waves-effect waves-light btn choiceBtn"
+    
+  });
+
+  console.log(btnArray)
+
 }
 
 
