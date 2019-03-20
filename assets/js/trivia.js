@@ -14,7 +14,6 @@ function init() {
 //Display Question based on Index of the array
 function displayQuestion(index) {
     compTime();
-    console.log("inside display Q" + qCount)
     //Set up title and timer
     document.querySelector('#game-content').innerHTML = `<h1>Biology Trivia Game</h1>          
     <div class = "remaining_time">Time Remaining</div> <div id="display">00:00</div>
@@ -105,10 +104,20 @@ function checkAnswer(index) {
 function displayAnswer(message) {
     //Clear the time, not needed for answer
     clearInterval(timer)
-    document.querySelector('#game-content').innerHTML = `<div id="content"><h2>${message}</h2><div id="explaination">${questions[qCount].explaination}</div></div>`
+
+
+    
+
+
+
+//console.log(`../images/answers/${questions[qCount].picName}`)
+    document.querySelector('#game-content').innerHTML = `<div id="content"><h2>${message}</h2><div id="explaination">${questions[qCount].explaination}</div>
+<br> <img src="assets/images/answers/${questions[qCount].picName}" height="300" class="responsive_img"></div>`
+
+
+
     //setTimeout for the answer for 3 seconds and then display answer
     setTimeout(function() {
-        console.log("inside display Answer " + qCount + " " + questions.length)
         qCount++
         if (qCount === questions.length) {
             displayScore()
@@ -116,7 +125,7 @@ function displayAnswer(message) {
             selectedAnswer = ""
             displayQuestion(qCount)
         }
-    }, 3000)
+    }, 5000)
 }
 
 //Display Score at the end of question array
@@ -148,7 +157,7 @@ document.addEventListener('click', e => {
             else
                 element.className = "waves-effect waves-light btn choiceBtn"
         });
-        console.log(btnArray)
+        
     }
     if (e.target.id === "SubmitButton") {
         checkAnswer(qCount)
