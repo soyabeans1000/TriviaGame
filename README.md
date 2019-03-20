@@ -1,9 +1,8 @@
-### trivia-game
-#Trivia Game - Javascript
+Trivia Game - Javascript
 
-###Technologies Used:
-# Javascipt
-# Materialize CSS
-# DOM Manipulation
+Technologies Used:
+Javascipt
+Materialize CSS
+DOM Manipulation
 
 https://soyabeans1000.github.io/trivia-game-2/
