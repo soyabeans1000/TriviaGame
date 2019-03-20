@@ -4,17 +4,17 @@ let totalWrong = 0
 let qCount = 0
 let selectedAnswer = ""
 let gameMessage
+let missed = 0
 
-
+//Initialize Game
 function init(){ 
   displayQuestion(0)
  }
 
-
+//Display Question by Array Index
  function displayQuestion(index)
  {
- 
-   compTime();
+     compTime();
 
    console.log("inside display Q" + qCount)
  
@@ -58,7 +58,11 @@ function checkAnswer(index)
   clearInterval(timer)
 
  if (selectedAnswer === "")
+ {
+   missed++
  displayAnswer("NO SELECTION!!!")
+ }
+ 
 
 
   let answerArray = selectedAnswer.split(' ')
@@ -130,6 +134,8 @@ setTimeout(function(){
     displayScore() 
   }
   else { 
+    selectedAnswer = ""
+
     displayQuestion(qCount) } 
 },2000)  
 
@@ -144,15 +150,14 @@ function displayScore()
 document.querySelector('#game-content').innerHTML = `<div class="score_board"><h2>YOUR SCORE</h2>
 Total Questions:${questions.length}<br><br>
 Total Correct:${totalCorrect}<br><br>
-Total wrong: ${totalWrong}</div><br><br>` 
+Total wrong: ${totalWrong}<br><br>
+Total Missed:${missed}<br><br></div><br><br>` 
 
  let newgameBtn = document.createElement('button')
   newgameBtn.innerHTML = 'New Trivia Quiz'
    document.querySelector('#game-content').append(newgameBtn)
    newgameBtn.addEventListener('click',init)
  }
-
-
 
 
 
