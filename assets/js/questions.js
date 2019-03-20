@@ -2,7 +2,7 @@
 questions = [{
   question: "The energy used by most living beings on the earth to feed, move, and reproduce all comes from what original source?",
   choiceList: ["the soil", "the sun", "the water", "Twinkies"],
-  answer: 'a',
+  answer: 'b',
   explaination: "The energy of the sun is captured by plants and algae by photosynthesis.", 
   picName: "sun.jpg"
 },
@@ -34,12 +34,14 @@ questions = [{
 
 
 {
-  question: "Where are you more likely to find the largest number of living organisms (including microbes) in one gallon of water?",
-  choiceList: ["Arctic Ocean", "Caspian Sea", "Caribbean Sea", "Mick Jagger's swimming pool"],
+  question: "There are many chemical reactions that occur in the body. What broad term is used to include them all?",
+  choiceList: ["metabolism", "catabolism", "matabolism", "anabolism"],
   answer: 'a',
-  explaination: "Cold, turbulent waters harbor the most biomass, in part because oxygen dissolves more in cold water than warm water.",
-  picName: "sun.jpg"
-},
+  explaination: "Metabolism: the chemical processes that occur within a living organism in order to maintain life.",
+ 
+  picName: "metabolism.png"
+}, 
+
 {
   question: "Which of the following lives in a cocoon for part of its life cycle?",
   choiceList: ["Dick Clark", "a mollusk", "a moth", "a crab"],
@@ -63,6 +65,8 @@ questions = [{
   answer: 'c',
   explaination: "Poikilotherms such as reptiles aren't actually cold. Their body temperature varies and is regulated by the environment and their behavior. Perhaps more common is the term 'ectotherm,' referring to the fact that the animals must rely on external heat.",
   picName: "cold_blooded.jpg"
+},
 
-}
+
+
 ]
