@@ -78,7 +78,7 @@ h2 {
   }
 
   .container {
-    min-height: 50vh;
+    min-height: 80vh;
     min-width: 40vw;
     margin: 0 auto;
     margin-top: 10px;
@@ -87,11 +87,11 @@ h2 {
   }
 
   body {
-      font-size: 1.2em;
+      font-size: 1em;
     }
 
     h1{
-      font-size:1.3em;
+      font-size:1.2em;
     }
   
 
