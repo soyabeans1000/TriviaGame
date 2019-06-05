@@ -5,6 +5,8 @@ Javascipt
 Materialize CSS
 DOM Manipulation
 
-https://soyabeans1000.github.io/trivia-game-2/
+https://soyabeans1000.github.io/TriviaGame
 
-<a href="https://soyabeans1000.github.io/trivia-game-2/"><img src="https://soyabeans1000.github.io/images/Portfolio/trivia.jpg" width="800"></a>
+
+<a href="https://soyabeans1000.github.io/TriviaGame
+"><img src="https://soyabeans1000.github.io/images/Portfolio/trivia.jpg" width="800"></a>
