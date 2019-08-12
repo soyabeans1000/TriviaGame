@@ -1,4 +1,5 @@
 Trivia Game - Javascript
+A interactive Trivia Game application that presents questions one at a time along with timers and images.
 
 Technologies Used:
 Javascipt
