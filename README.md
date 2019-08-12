@@ -13,8 +13,8 @@ https://soyabeans1000.github.io/TriviaGame
 <br> <br>
 
 <a href="https://soyabeans1000.github.io/TriviaGame
-"><img src="https://soyabeans1000.github.io/images/githubscreenshots/trivia2.jpg" width="800"></a>
+"><img src="https://soyabeans1000.github.io/portfolio/githubscreenshots/trivia2.jpg" width="800"></a>
 <br> <br>
 
 <a href="https://soyabeans1000.github.io/TriviaGame
-"><img src="https://soyabeans1000.github.io/images/githubscreenshots/trivia3.jpg" width="800"></a>
+"><img src="https://soyabeans1000.github.io/portfolio/githubscreenshots/trivia3.jpg" width="800"></a>
