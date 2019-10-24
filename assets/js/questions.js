@@ -47,7 +47,7 @@ questions = [{
   choiceList: ["Dick Clark", "a mollusk", "a moth", "a crab"],
   answer: 'c',
   explaination: "A cocoon protects the pupa of some insects during metamorphosis.",
-  picName: "cocoon.jpg"
+  picName: "cocoon2.jpg"
 },
 {
   question: "Why do fish swim in schools?",
